@@ -53,17 +53,17 @@ export default function () {
 
                 {/* Score Board */}
                 <section>
-                    <div className=' top-6 h-40 w-12 bg-[#27548A] relative rounded-r-lg flex flex-col justify-between'>
-                        <div className='flex justify-center pt-2 text-2xl font-bold text-white'>
+                    <div className=' top-6 h-40 w-12 bg-amber-100 border-2 border-l-0 border-amber-300 relative rounded-r-lg flex flex-col justify-between'>
+                        <div className='flex justify-center pt-2 text-3xl font-bold text-black'>
                             {botScore}
                         </div>
-                        <div className='flex justify-center pt-2 text-2xl font-bold text-white'>
+                        <div className='flex justify-center pt-2 text-3xl font-bold text-black'>
                             {humanScore}
                         </div>
                     </div>
 
                     <div>
-                        //<Result humanScore={humanScore} botScore={botScore}></Result>
+                        {/* <Result humanScore={humanScore} botScore={botScore}></Result> */}
                     </div>
                 </section>
 
@@ -82,23 +82,23 @@ export default function () {
 
             <div>
                 {/* Action Buttons */}
-                <section className='bg-amber-100 border-t-2 border-amber-300 flex justify-between py-4'>
+                <section className='bg-amber-100 border-t-2 border-amber-300 flex justify-between py-4 pb-20'>
                     <button
-                        className='flex justify-center'
+                        className='flex justify-center cursor-pointer'
                         onClick={() => action(1)}
                         disabled={shake}
                     >
                         <img className='w-[45%]' src={rock} alt="" />
                     </button>
                     <button
-                        className='flex justify-center'
+                        className='flex justify-center cursor-pointer'
                         onClick={() => action(3)}
                         disabled={shake}
                     >
                         <img className='w-[45%]' src={paper} alt="" />
                     </button>
                     <button
-                        className='flex justify-center'
+                        className='flex justify-center cursor-pointer'
                         onClick={() => action(2)}
                         disabled={shake}
                     >
